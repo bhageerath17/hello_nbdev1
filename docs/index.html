@@ -1,13 +1,13 @@
 ---
 
-title: Project name here
+title: Item clustering
 
 
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "Summary description here."
-description: "Summary description here."
+summary: "Cluster the product items and find out the KVI's"
+description: "Cluster the product items and find out the KVI's"
 nb_path: "index.ipynb"
 ---
 <!--
@@ -31,70 +31,57 @@ nb_path: "index.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This file will become your README and also the index of your documentation.</p>
+<h2 id="Pages">Pages<a class="anchor-link" href="#Pages"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Description of each page</p>
+<ul>
+<li><p><em>Data</em>: This page takes through the steps of the queries used, data collected and saved. The data saved in these steps is used for the analysis and modeling. The data is saved in the <code>nbs/data</code> folder</p>
+<p>The data generated from this page is saved in the following format:</p>
+<ul>
+<li><code>nbs/data/raw</code> - The original, immutable data dump.</li>
+<li><code>nbs/data/interim</code> folder - Intermediate data that has been transformed.</li>
+<li><code>raw/data/processed</code> folder - The final, canonical data sets for modeling.</li>
+<li><code>raw/data/external</code> folder - Data from external sources (outside snowflake or in excel sheets or csv files)</li>
+</ul>
+</li>
+<li><p><em>Analysis</em>: The data collected in the <code>data</code> module is used to understand the features and generate profile reports. The reports are saved in the <code>nbs/reports</code> folder of the repo</p>
+<p>The reports generated from this page is saved in the following format:</p>
+<ul>
+<li><code>nbs/reports/figures</code> - Any matplotlib or bokeh plots here that are generated from the notebooks. Any images or plots included in the notebooks/documentation will be saved here.</li>
+</ul>
+</li>
+<li><p><em>Models</em>: Clustering algorithms are used to understand the item segments. The steps outlined in this page takes you through the several algorithms used, best parameters dervied using hyper parameter optmization etc.</p>
+<p>The models developed from this page is saved in the following format:</p>
+<ul>
+<li><code>nbs/models/dbscan-*</code> - This folder contains the results of the dbscan clustering algorithm. Each subfolder that starts with <code>dbscan-*</code> hosts several iterations of the model based on any changes to the data. The iterations are named after the date that used to train the model (ex: <code>20210128</code>).</li>
+</ul>
+</li>
+<li><p><em>Feature importance</em>: Feature importance for clusters is computed using quantile distance. This page takes you through the method used and any example that may be helpful to understand the concept</p>
+</li>
+<li><p><em>Validation</em>: Validating the clusters produced is critical to understand which parameters are best for the model</p>
+</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Install">Install<a class="anchor-link" href="#Install"> </a></h2>
+<h2 id="Installation">Installation<a class="anchor-link" href="#Installation"> </a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>pip install your_project_name</code></p>
+<p><code>pip install item_clustering</code></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="How-to-use">How to use<a class="anchor-link" href="#How-to-use"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Fill me in please! Don't forget code examples:</p>
-
-</div>
-</div>
-</div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
 </div>
  
 
