@@ -1,6 +1,11 @@
 {
   "hellonbdev": {
     "Overview": "/",
-    "module name here": "core.html"
+    "module name here": "core.html",
+    "Data": "data.html",
+    "Analysis": "analysis.html",
+    "Models": "models.html",
+    "Feature importance": "feature_importance.html",
+    "Validation": "validation.html"
   }
 }

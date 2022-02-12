@@ -12,6 +12,21 @@ entries:
     - output: web,pdf
       title: module name here
       url: core.html
+    - output: web,pdf
+      title: Data
+      url: data.html
+    - output: web,pdf
+      title: Analysis
+      url: analysis.html
+    - output: web,pdf
+      title: Models
+      url: models.html
+    - output: web,pdf
+      title: Feature importance
+      url: feature_importance.html
+    - output: web,pdf
+      title: Validation
+      url: validation.html
     output: web
     title: hellonbdev
   output: web
